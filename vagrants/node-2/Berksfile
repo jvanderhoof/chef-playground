@@ -1,3 +1,4 @@
 site :opscode
 
 cookbook 'serf', git: 'git@github.com:bbaugher/serf.git'
+cookbook 'apache2'

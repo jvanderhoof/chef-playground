@@ -4,6 +4,9 @@
       "locked_version": "0.5.0",
       "git": "git@github.com:bbaugher/serf.git",
       "ref": "5112704acda7a0a161441a6051a91cbbdde9c1e4"
+    },
+    "apache2": {
+      "locked_version": "1.8.4"
     }
   }
 }

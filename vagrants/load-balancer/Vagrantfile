@@ -126,6 +126,20 @@ Vagrant.configure("2") do |config|
   #
   #   # You may also specify custom JSON attributes:
   #   chef.json = { :mysql_password => "foo" }
-    chef.add_recipe "serf"
+    #chef.cookbooks_path = "../../cookbooks/"
+    chef.add_recipe "jv-haproxy"
+    #chef.add_recipe "serf"
+    #chef.add_recipe 'haproxy'
+=begin
+    chef.json  = {
+      haproxy: {
+        members: [],
+        admin: {
+          address_bind: "10.10.20.10",
+          port: '3000'
+        }
+      }
+    }
+=end
   end
 end

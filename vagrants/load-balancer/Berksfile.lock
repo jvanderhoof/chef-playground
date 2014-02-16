@@ -4,6 +4,18 @@
       "locked_version": "0.5.0",
       "git": "git@github.com:bbaugher/serf.git",
       "ref": "5112704acda7a0a161441a6051a91cbbdde9c1e4"
+    },
+    "jv-haproxy": {
+      "path": "../../cookbooks/jv_haproxy"
+    },
+    "haproxy": {
+      "locked_version": "1.6.2"
+    },
+    "cpu": {
+      "locked_version": "0.2.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
     }
   }
 }

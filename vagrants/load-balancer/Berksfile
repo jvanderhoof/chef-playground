@@ -1,3 +1,5 @@
 site :opscode
 
 cookbook 'serf', git: 'git@github.com:bbaugher/serf.git'
+#cookbook 'haproxy'
+cookbook 'jv-haproxy', path: '../../cookbooks/jv_haproxy'
