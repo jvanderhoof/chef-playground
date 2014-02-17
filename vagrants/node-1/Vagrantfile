@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "base"
+  config.vm.network :private_network, ip: "10.10.20.11"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -125,7 +126,12 @@ Vagrant.configure("2") do |config|
   #
   #   # You may also specify custom JSON attributes:
   #   chef.json = { :mysql_password => "foo" }
-    chef.add_recipe "serf"
-    chef.add_recipe "apache2"
+
+    chef.add_recipe "jv_app_node"
+    chef.json = {
+      jv_app_node: {
+        name: 'node 1'
+      }
+    }
   end
 end

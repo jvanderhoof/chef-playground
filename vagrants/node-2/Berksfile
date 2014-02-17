@@ -1,4 +1,4 @@
 site :opscode
 
 cookbook 'serf', git: 'git@github.com:bbaugher/serf.git'
-cookbook 'apache2'
+cookbook 'jv_app_node', path: '../../cookbooks/jv_app_node'

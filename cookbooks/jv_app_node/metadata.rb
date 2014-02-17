@@ -9,3 +9,4 @@ version          '0.0.1'
 recipe "jv_app_node::default", "Standard App Node"
 
 depends 'serf'
+depends 'apache2'
