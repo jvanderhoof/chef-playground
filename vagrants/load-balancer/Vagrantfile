@@ -128,6 +128,10 @@ Vagrant.configure("2") do |config|
   #   chef.json = { :mysql_password => "foo" }
 
     chef.add_recipe "jv_haproxy"
+    chef.json = {
+      node_ip: "10.10.20.10",
+      node_name: 'load_balancer',
+    }
 
   end
 end
